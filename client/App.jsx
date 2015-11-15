@@ -3,10 +3,14 @@ const { Paper, Tab, Tabs } = mui;
 App = React.createClass({
   componentWillMount() {
     this.setState({
-      tabIndex: this._getSelectIndex()
+      tabIndex: this._getSelectedIndex()
     });
   },
-
+  componentWillReceiveProps(nextProps, nextContext) {
+    this.setState({
+      tabIndex: this._getSelectedIndex()
+    });
+  },
   render() {
     let styles = {
       root: {
@@ -52,12 +56,12 @@ App = React.createClass({
     );
   },
 
-  _getSelectIndex() {
+  _getSelectedIndex() {
     return this.props.history.isActive('/home')? '1': this.props.history.isActive('/blog')? '2': this.props.history.isActive('/about')? '3': '0';
   },
 
   _handleTabsChange(value, e, tab) {
     this.props.history.pushState(null, tab.props.route);
-    this.setState({tabIndex: this._getSelectIndex()});
+    this.setState({tabIndex: this._getSelectedIndex()});
   }
 });
