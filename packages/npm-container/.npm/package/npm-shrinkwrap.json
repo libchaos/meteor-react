@@ -1,0 +1,330 @@
+{
+  "dependencies": {
+    "externalify": {
+      "version": "https://registry.npm.taobao.org/externalify/download/externalify-0.1.0.tgz",
+      "dependencies": {
+        "globo": {
+          "version": "https://registry.npm.taobao.org/globo/download/globo-1.0.2.tgz",
+          "dependencies": {
+            "accessory": {
+              "version": "https://registry.npm.taobao.org/accessory/download/accessory-1.0.1.tgz",
+              "dependencies": {
+                "dot-parts": {
+                  "version": "https://registry.npm.taobao.org/dot-parts/download/dot-parts-1.0.1.tgz"
+                }
+              }
+            },
+            "is-defined": {
+              "version": "https://registry.npm.taobao.org/is-defined/download/is-defined-1.0.0.tgz"
+            },
+            "ternary": {
+              "version": "https://registry.npm.taobao.org/ternary/download/ternary-1.0.0.tgz"
+            }
+          }
+        },
+        "map-obj": {
+          "version": "1.0.1"
+        },
+        "replace-require-functions": {
+          "version": "https://registry.npm.taobao.org/replace-require-functions/download/replace-require-functions-1.0.0.tgz",
+          "dependencies": {
+            "detective": {
+              "version": "https://registry.npm.taobao.org/detective/download/detective-4.1.1.tgz",
+              "dependencies": {
+                "acorn": {
+                  "version": "https://registry.npm.taobao.org/acorn/download/acorn-1.2.2.tgz"
+                },
+                "defined": {
+                  "version": "https://registry.npm.taobao.org/defined/download/defined-1.0.0.tgz"
+                },
+                "escodegen": {
+                  "version": "https://registry.npm.taobao.org/escodegen/download/escodegen-1.7.0.tgz",
+                  "dependencies": {
+                    "estraverse": {
+                      "version": "1.9.3"
+                    },
+                    "esutils": {
+                      "version": "https://registry.npm.taobao.org/esutils/download/esutils-2.0.2.tgz"
+                    },
+                    "esprima": {
+                      "version": "1.2.5"
+                    },
+                    "optionator": {
+                      "version": "0.5.0",
+                      "dependencies": {
+                        "prelude-ls": {
+                          "version": "https://registry.npm.taobao.org/prelude-ls/download/prelude-ls-1.1.2.tgz"
+                        },
+                        "deep-is": {
+                          "version": "0.1.3"
+                        },
+                        "wordwrap": {
+                          "version": "0.0.3"
+                        },
+                        "type-check": {
+                          "version": "0.3.1"
+                        },
+                        "levn": {
+                          "version": "0.2.5"
+                        },
+                        "fast-levenshtein": {
+                          "version": "https://registry.npm.taobao.org/fast-levenshtein/download/fast-levenshtein-1.0.7.tgz"
+                        }
+                      }
+                    },
+                    "source-map": {
+                      "version": "https://registry.npm.taobao.org/source-map/download/source-map-0.2.0.tgz",
+                      "dependencies": {
+                        "amdefine": {
+                          "version": "1.0.0"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "has-require": {
+              "version": "https://registry.npm.taobao.org/has-require/download/has-require-1.2.1.tgz",
+              "dependencies": {
+                "escape-string-regexp": {
+                  "version": "1.0.3"
+                }
+              }
+            },
+            "patch-text": {
+              "version": "https://registry.npm.taobao.org/patch-text/download/patch-text-1.0.2.tgz"
+            },
+            "xtend": {
+              "version": "https://registry.npm.taobao.org/xtend/download/xtend-4.0.1.tgz"
+            }
+          }
+        },
+        "through2": {
+          "version": "0.4.2",
+          "dependencies": {
+            "readable-stream": {
+              "version": "1.0.33",
+              "dependencies": {
+                "core-util-is": {
+                  "version": "1.0.1"
+                },
+                "isarray": {
+                  "version": "0.0.1"
+                },
+                "string_decoder": {
+                  "version": "0.10.31"
+                },
+                "inherits": {
+                  "version": "2.0.1"
+                }
+              }
+            },
+            "xtend": {
+              "version": "2.1.2",
+              "dependencies": {
+                "object-keys": {
+                  "version": "0.4.0"
+                }
+              }
+            }
+          }
+        },
+        "transformify": {
+          "version": "https://registry.npm.taobao.org/transformify/download/transformify-0.1.2.tgz",
+          "dependencies": {
+            "readable-stream": {
+              "version": "1.1.13",
+              "dependencies": {
+                "core-util-is": {
+                  "version": "1.0.1"
+                },
+                "isarray": {
+                  "version": "0.0.1"
+                },
+                "string_decoder": {
+                  "version": "0.10.31"
+                },
+                "inherits": {
+                  "version": "2.0.1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "history": {
+      "version": "https://registry.npm.taobao.org/history/download/history-1.13.0.tgz",
+      "dependencies": {
+        "deep-equal": {
+          "version": "https://registry.npm.taobao.org/deep-equal/download/deep-equal-1.0.1.tgz"
+        },
+        "invariant": {
+          "version": "https://registry.npm.taobao.org/invariant/download/invariant-2.1.2.tgz",
+          "dependencies": {
+            "loose-envify": {
+              "version": "https://registry.npm.taobao.org/loose-envify/download/loose-envify-1.1.0.tgz",
+              "dependencies": {
+                "js-tokens": {
+                  "version": "https://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.2.tgz"
+                }
+              }
+            }
+          }
+        },
+        "qs": {
+          "version": "4.0.0"
+        },
+        "warning": {
+          "version": "https://registry.npm.taobao.org/warning/download/warning-2.1.0.tgz",
+          "dependencies": {
+            "loose-envify": {
+              "version": "https://registry.npm.taobao.org/loose-envify/download/loose-envify-1.1.0.tgz",
+              "dependencies": {
+                "js-tokens": {
+                  "version": "https://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.2.tgz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "material-ui": {
+      "version": "https://registry.npm.taobao.org/material-ui/download/material-ui-0.13.1.tgz"
+    },
+    "react": {
+      "version": "https://registry.npm.taobao.org/react/download/react-0.14.2.tgz",
+      "dependencies": {
+        "envify": {
+          "version": "https://registry.npm.taobao.org/envify/download/envify-3.4.0.tgz",
+          "dependencies": {
+            "through": {
+              "version": "https://registry.npm.taobao.org/through/download/through-2.3.8.tgz"
+            },
+            "jstransform": {
+              "version": "https://registry.npm.taobao.org/jstransform/download/jstransform-10.1.0.tgz",
+              "dependencies": {
+                "base62": {
+                  "version": "https://registry.npm.taobao.org/base62/download/base62-0.1.1.tgz"
+                },
+                "esprima-fb": {
+                  "version": "https://registry.npm.taobao.org/esprima-fb/download/esprima-fb-13001.1001.0-dev-harmony-fb.tgz"
+                },
+                "source-map": {
+                  "version": "https://registry.npm.taobao.org/source-map/download/source-map-0.1.31.tgz",
+                  "dependencies": {
+                    "amdefine": {
+                      "version": "1.0.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fbjs": {
+          "version": "https://registry.npm.taobao.org/fbjs/download/fbjs-0.3.2.tgz",
+          "dependencies": {
+            "core-js": {
+              "version": "https://registry.npm.taobao.org/core-js/download/core-js-1.2.6.tgz"
+            },
+            "loose-envify": {
+              "version": "https://registry.npm.taobao.org/loose-envify/download/loose-envify-1.1.0.tgz",
+              "dependencies": {
+                "js-tokens": {
+                  "version": "https://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.2.tgz"
+                }
+              }
+            },
+            "promise": {
+              "version": "https://registry.npm.taobao.org/promise/download/promise-7.0.4.tgz",
+              "dependencies": {
+                "asap": {
+                  "version": "https://registry.npm.taobao.org/asap/download/asap-2.0.3.tgz"
+                }
+              }
+            },
+            "ua-parser-js": {
+              "version": "0.7.9"
+            },
+            "whatwg-fetch": {
+              "version": "https://registry.npm.taobao.org/whatwg-fetch/download/whatwg-fetch-0.9.0.tgz"
+            }
+          }
+        }
+      }
+    },
+    "react-addons-create-fragment": {
+      "version": "https://registry.npm.taobao.org/react-addons-create-fragment/download/react-addons-create-fragment-0.14.2.tgz"
+    },
+    "react-addons-pure-render-mixin": {
+      "version": "https://registry.npm.taobao.org/react-addons-pure-render-mixin/download/react-addons-pure-render-mixin-0.14.2.tgz"
+    },
+    "react-addons-transition-group": {
+      "version": "https://registry.npm.taobao.org/react-addons-transition-group/download/react-addons-transition-group-0.14.2.tgz"
+    },
+    "react-addons-update": {
+      "version": "https://registry.npm.taobao.org/react-addons-update/download/react-addons-update-0.14.2.tgz"
+    },
+    "react-dom": {
+      "version": "https://registry.npm.taobao.org/react-dom/download/react-dom-0.14.2.tgz"
+    },
+    "react-router": {
+      "version": "https://registry.npm.taobao.org/react-router/download/react-router-1.0.0.tgz",
+      "dependencies": {
+        "invariant": {
+          "version": "https://registry.npm.taobao.org/invariant/download/invariant-2.1.2.tgz",
+          "dependencies": {
+            "loose-envify": {
+              "version": "https://registry.npm.taobao.org/loose-envify/download/loose-envify-1.1.0.tgz",
+              "dependencies": {
+                "js-tokens": {
+                  "version": "https://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.2.tgz"
+                }
+              }
+            }
+          }
+        },
+        "warning": {
+          "version": "https://registry.npm.taobao.org/warning/download/warning-2.1.0.tgz",
+          "dependencies": {
+            "loose-envify": {
+              "version": "https://registry.npm.taobao.org/loose-envify/download/loose-envify-1.1.0.tgz",
+              "dependencies": {
+                "js-tokens": {
+                  "version": "https://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.2.tgz"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "react-tap-event-plugin": {
+      "version": "https://registry.npm.taobao.org/react-tap-event-plugin/download/react-tap-event-plugin-0.2.1.tgz",
+      "dependencies": {
+        "fbjs": {
+          "version": "https://registry.npm.taobao.org/fbjs/download/fbjs-0.2.1.tgz",
+          "dependencies": {
+            "core-js": {
+              "version": "https://registry.npm.taobao.org/core-js/download/core-js-1.2.6.tgz"
+            },
+            "promise": {
+              "version": "https://registry.npm.taobao.org/promise/download/promise-7.0.4.tgz",
+              "dependencies": {
+                "asap": {
+                  "version": "https://registry.npm.taobao.org/asap/download/asap-2.0.3.tgz"
+                }
+              }
+            },
+            "whatwg-fetch": {
+              "version": "https://registry.npm.taobao.org/whatwg-fetch/download/whatwg-fetch-0.9.0.tgz"
+            }
+          }
+        }
+      }
+    }
+  }
+}
