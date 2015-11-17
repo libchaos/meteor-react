@@ -154,8 +154,11 @@
         }
       }
     },
+    "highlight.js": {
+      "version": "https://registry.npm.taobao.org/highlight.js/download/highlight.js-8.9.1.tgz"
+    },
     "history": {
-      "version": "https://registry.npm.taobao.org/history/download/history-1.13.0.tgz",
+      "version": "https://registry.npm.taobao.org/history/download/history-1.13.1.tgz",
       "dependencies": {
         "deep-equal": {
           "version": "https://registry.npm.taobao.org/deep-equal/download/deep-equal-1.0.1.tgz"
@@ -190,6 +193,9 @@
           }
         }
       }
+    },
+    "marked": {
+      "version": "https://registry.npm.taobao.org/marked/download/marked-0.3.5.tgz"
     },
     "material-ui": {
       "version": "https://registry.npm.taobao.org/material-ui/download/material-ui-0.13.1.tgz"
