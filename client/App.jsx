@@ -1,67 +1,91 @@
-const { Paper, Tab, Tabs } = mui;
+const { AppBar } = mui;
 
 App = React.createClass({
   componentWillMount() {
     this.setState({
       tabIndex: this._getSelectedIndex()
     });
+
+    let setTabsState = function() {
+      this.setState({renderTabs: !(document.body.clientWidth <= 647)});
+    }.bind(this);
+    setTabsState();
+    window.onresize = setTabsState;
   },
+
   componentWillReceiveProps(nextProps, nextContext) {
     this.setState({
       tabIndex: this._getSelectedIndex()
     });
   },
-  render() {
-    let styles = {
-      root: {
-        position: 'fixed',
-        height: 64,
-        top: 0,
-        right: 0,
-        zIndex: 4,
-        width: '100%'
+
+  getStyles() {
+    return {
+      footer: {
+        padding: '72px 24px',
+        backgroundColor: '#212121',
+        textAlign: 'center'
       },
-      tabs: {
-        width: '300px',
-        position: 'absolute',
-        right: 60,
-        textTransform: 'uppercase'
-      },
-      tab: {
-        height: 64,
-        color: '#727272'
-      },
-      inkBar: {
-        backgroundColor: "#00bcd4",
-        height: '4px',
-        marginTop: '-4px'
+      p: {
+        margin: '0 auto',
+        padding: 0,
+        color: 'rgba(255, 255, 255, 0.54)',
+        fontSize: '1.5em',
+        maxWidth: 500
       }
     };
+  },
 
+  render() {
+    let styles = this.getStyles();
     return (
       <div>
-        <Paper style={ styles.root }>
-          <Tabs style={styles.tabs}
-                tabItemContainerStyle={{backgroundColor: '#fff'}}
-                inkBarStyle={styles.inkBar}
-                value={this.state.tabIndex}
-                onChange={this._handleTabsChange}>
-            <Tab style={styles.tab} value='1' label='家' route='/home'/>
-            <Tab style={styles.tab} value='2' label='博客' route='/blog'/>
-            <Tab style={styles.tab} value='3' label='关于' route='/about'/>
-          </Tabs>
-        </Paper>
+        { this.state.renderTabs ? (
+          <NavBarTabs
+            onHandleTabsChange={this._handleTabsChange}
+            tabIndex={this.state.tabIndex} />
+        ) : this._getAppBar() }
+
+        <AppLeftNav ref="leftNav" history={this.props.history} />
+
         {this.props.children}
+         <div style={styles.footer}>
+          <p style={styles.p}>
+            The beautiful attracts the beautiful
+          </p>
+        </div>
       </div>
     );
   },
 
   _getSelectedIndex() {
-    return this.props.history.isActive('/home')? '1': this.props.history.isActive('/blog')? '2': this.props.history.isActive('/about')? '3': '0';
+    return this.props.history.isActive('/home') ? '1' :
+      this.props.history.isActive('/blog') ? '2' :
+      this.props.history.isActive('/about') ? '3' : '0';
   },
 
   _handleTabsChange(value, e, tab) {
     this.props.history.pushState(null, tab.props.route);
     this.setState({tabIndex: this._getSelectedIndex()});
+  },
+
+  _getAppBar() {
+    let title = this.props.history.isActive('/home') ? 'Home' :
+      this.props.history.isActive('/blogs') ? 'Blogs' :
+      this.props.history.isActive('/about') ? 'About' : '';
+
+    return (
+      <div>
+        <AppBar
+          onLeftIconButtonTouchTap={this._onLeftIconButtonTouchTap}
+          title={title}
+          zDepth={1}
+          style={{position: 'absolute', top: 0}}/>
+      </div>
+    );
+  },
+
+  _onLeftIconButtonTouchTap() {
+    this.refs.leftNav.toggle();
   }
 });
